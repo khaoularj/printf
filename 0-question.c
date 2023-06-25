@@ -7,14 +7,14 @@
 int _printf(const char *format, ...)
 {
 	int count;
-	va_list ap;
+	va_list list;
 
 	if (format == NULL)
 		return (-1);
 
-	va_start(ap, format);
+	va_start(list, format);
 
-	count = vprintf(format, ap);
-	va_end(ap);
+	count = vprintf(format, list);
+	va_end(list);
 	return (count);
 }
