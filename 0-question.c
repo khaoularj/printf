@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 	 */
 	va_start(list, format);
 	/* a variable that stores the number of arguements */
-	count = vprintf(format, list);
+	count = printf(format, list);
 	/** ending the variadic function */
 	va_end(list);
 	/* return the value in the count variable */
